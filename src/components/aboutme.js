@@ -1,6 +1,6 @@
 const AboutMe = () => {
-    return (
-        <div class="jumbotron">
+  return (
+    <div class="jumbotron">
       <div class="container text-center">
         <h1>Zana Mathuthu's Professional Portfolio</h1>
         <div class="row">
@@ -24,5 +24,8 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    )
-}
+    </div>
+  );
+};
+
+export default AboutMe;
