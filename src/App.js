@@ -3,24 +3,31 @@ import Head from "./components/head";
 import Header from "./components/header";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("About");
+
+  const renderPage = (clickedPage) => {
+    switch (clickedPage) {
+      case "About":
+        return <AboutMe></AboutMe>;
+      case "Portfolio":
+        return <Portfolio></Portfolio>;
+    }
+  };
+
+  // sent down as a prop to children to change state
+  const navigatePage = (clickedPage) => {
+    return setCurrentPage(clickedPage);
+  };
+
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Head></Head>
-        <Header></Header>
-        <Switch>
-          <Route
-            exact
-            path="https://zanamama.github.io/react-portfolio2/"
-            component={AboutMe}
-          />
-          <Route exact path="/portfolio/" component={Portfolio} />
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <Head></Head>
+      <Header></Header>
+      {renderPage("About")}
+      <Footer></Footer>
     </>
   );
 }
