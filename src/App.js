@@ -11,10 +11,13 @@ function App() {
       <BrowserRouter>
         <Head></Head>
         <Header></Header>
-        <Route exact path="https://zanamama.github.io/">
+        <Route exact path="https://zanamama.github.io/react-portfolio2/">
           <AboutMe></AboutMe>
         </Route>
-        <Route exact path="https://zanamama.github.io/portfolio">
+        <Route
+          exact
+          path="https://zanamama.github.io/react-portfolio2/portfolio"
+        >
           <Portfolio></Portfolio>
         </Route>
         <Footer></Footer>
