@@ -14,7 +14,7 @@ function App() {
         <Route path="/">
           <AboutMe></AboutMe>
         </Route>
-        <Route path="https://zanamama.github.io/react-portfolio2/portfolio">
+        <Route path="/portfolio">
           <Portfolio></Portfolio>
         </Route>
         <Footer></Footer>
