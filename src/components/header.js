@@ -23,7 +23,7 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="/">Home</a>
+              <a href="https://zanamama.github.io/react-portfolio2/">Home</a>
             </li>
             <li>
               <a href="/portfolio">Portfolio</a>
