@@ -26,7 +26,7 @@ const Header = () => {
               <a href="https://zanamama.github.io/react-portfolio2/">Home</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a href="https://zanamama.github.io/portfolio">Portfolio</a>
             </li>
             <li>
               <a href="assets/docs/Zana-Mathuthu-Resume-2021.pdf">Resume</a>
