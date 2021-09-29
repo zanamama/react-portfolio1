@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Head></Head>
         <Header></Header>
-        <Route exact path="https://zanamama.github.io/react-portfolio2/">
+        <Route exact path="https://zanamama.github.io/">
           <AboutMe></AboutMe>
         </Route>
         <Route exact path="https://zanamama.github.io/portfolio">
