@@ -3,22 +3,20 @@ import Head from "./components/head";
 import Header from "./components/header";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router basename={process.env.PUBLIC_URL}>
         <Head></Head>
         <Header></Header>
-        <Route path="/">
-          <AboutMe></AboutMe>
-        </Route>
-        <Route path="/portfolio">
-          <Portfolio></Portfolio>
-        </Route>
+        <Switch>
+          <Route exact path="/" component={AboutMe} />
+          <Route exact path="/portfolio/" component={Portfolio} />
+        </Switch>
         <Footer></Footer>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
