@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ navigatePage }) => {
   return (
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -26,7 +26,9 @@ const Header = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a onClick={() => navigatePage("Portfolio")} href="#">
+                Portfolio
+              </a>
             </li>
             <li>
               <a href="assets/docs/Zana-Mathuthu-Resume-2021.pdf">Resume</a>

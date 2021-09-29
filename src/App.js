@@ -25,8 +25,8 @@ function App() {
   return (
     <>
       <Head></Head>
-      <Header></Header>
-      {renderPage("About")}
+      <Header navigatePage={navigatePage}></Header>
+      {renderPage(currentPage)}
       <Footer></Footer>
     </>
   );
