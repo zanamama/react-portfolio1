@@ -4,8 +4,6 @@ import yellow3 from "../assets/images/yellow3.jpeg";
 import yellow4 from "../assets/images/yellow4.jpeg";
 import yellow5 from "../assets/images/yellow5.jpeg";
 import yellow6 from "../assets/images/yellow6.jpeg";
-import calculator from "../assets/images/calculator.jpeg";
-import ecommerce from "../assets/images/ecommerce.jpeg";
 
 const Portfolio = () => {
   return (
@@ -29,7 +27,7 @@ const Portfolio = () => {
             <h4>Staffing</h4>
             <a href="http://intercomstaffing.com/">
               <img
-                src={ecommerce}
+                src={yellow6}
                 class="img-responsive"
                 style={{ width: "100%" }}
                 alt="Staffing Website made for my first client in 2019"
@@ -68,7 +66,7 @@ const Portfolio = () => {
             <h4>Password Generator</h4>
             <a href="https://zanamama.github.io/Password-Generator/">
               <img
-                src={calculator}
+                src={yellow1}
                 class="img-responsive"
                 style={{ width: "100%" }}
                 alt="password generator"
