@@ -12,7 +12,11 @@ function App() {
         <Head></Head>
         <Header></Header>
         <Switch>
-          <Route exact path="/" component={AboutMe} />
+          <Route
+            exact
+            path="https://zanamama.github.io/react-portfolio2/"
+            component={AboutMe}
+          />
           <Route exact path="/portfolio/" component={Portfolio} />
         </Switch>
         <Footer></Footer>
